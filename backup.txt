@@ -1,1 +1,10 @@
- 
+[zsh]
+autojump
+autosuggestions
+syntax-highlight
+
+[tmux]
+gruvbox
+sensible
+
+[neovim]
