@@ -1,0 +1,5 @@
+let deoplete#custom#option({'enable_refresh_always': v:false,
+                            \ 'auto_complete_start_length': 1,
+                            \ 'auto_complete_delay': 0,
+                            \ })
+let g:deoplete#max_list = 10000 

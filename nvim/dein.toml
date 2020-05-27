@@ -1,0 +1,55 @@
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+on_event = 'InsertCharPre'
+on_ft = 'snippet'
+depends = 'context_filetype.vim'
+hook_add = '''
+source ~/.config/nvim/plugins/neosnippet.rc.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+depends = ['context_filetype.vim']
+on_event = "InsertEnter"
+hook_add = '''
+source ~/.config/nvim/plugins/deoplete.rc.vim
+'''
+
+[[plugins]]
+repo = 'autozimu/LanguageClient-neovim'
+rev = 'next'
+build = 'bash install.sh'
+hook_add = '''
+source ~/.config/nvim/plugins/LanguageClient-neovim.rc.vim
+'''
+
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+on_ft = 'rust'
+hook_add = '''
+source ~/.config/nvim/plugins/rust.rc.vim
+'''
+
+[[plugins]]
+repo = 'w0rp/ale'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+source ~/.config/nvim/plugins/nerdtree.vim
+'''
+
+[[plugins]]
+repo = 'kassio/neoterm'
+hook_add = '''
+let g:neoterm_default_mod='belowright'
+let g:neoterm_size=10
+let g:neoterm_autoscroll=1
+tnoremap <silent> <C-w> <C-\><C-n><C-w>
+'''
